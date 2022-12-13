@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family= família= Merriweather+Sans:wght@300;400;700 & display=swap");
+
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+body {
+  background-color: #22212c;
+  font-family: "Merriweather Sans", sans-serif;
+  margin: 2% 2%;
+}
+
+p {
+  color: #837e9f;
+}
+.main {
+  display: grid;
+  background-color: #22212c;
+  box-sizing: border-box;
+  grid-template-columns: 20% 37% 37%;
+  grid-template-rows: 4% 12% 5% 16% 11% 23%;
+  grid-template-areas:
+    "profile myprojects myprojects"
+    "profile postGH-1 postGH-2"
+    "contacts recentPost recentPost"
+    "contacts post post"
+    "tec  . ."
+    "exp . ."
+    "edu . .";
+
+  column-gap: 3%;
+  row-gap: 3%;
+}
+
+.profile {
+  grid-area: profile;
+  background-color: #302f3d;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 35vh;
+  min-width: 195px;
+  min-height: 209px;
+  color: #837e9f;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid 2px #00ff00;
+}
+
+.profile p {
+  margin: 0px;
+  background-color: #302f3d;
+}
+
+.profile h2 {
+  margin-bottom: 5px;
+  background-color: #302f3d;
+}
+
+.myprojects {
+  grid-area: myprojects;
+  border: solid 2px var(--bg-cards);
+  width: 73vw;
+  height: 10vh;
+  border-radius: 10px;
+  background-color: #302f3d;
+  color: #837e9f;
+}
+
+.contacts {
+  grid-area: contacts;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 44vh;
+  border-radius: 10px;
+  background-color: #302f3d;
+  color: #837e9f;
+}
+
+.contacts .imag {
+  display: flex;
+  justify-content: center;
+  margin-right: 180px;
+}
+.contacts .imag2 {
+  display: flex;
+  justify-content: center;
+  margin-right: 167px;
+}
+.contacts .imag3 {
+  display: flex;
+  justify-content: center;
+  margin-right: 57px;
+}
+.contacts .imag4 {
+  display: flex;
+  justify-content: center;
+  margin-right: 103px;
+}
+.contacts .imag5 {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.postGH-1 {
+  grid-area: postGH-1;
+  border: solid 2px var(--bg-cards);
+  width: 35vw;
+  height: 22vh;
+  border-radius: 10px;
+  background-color: #302f3d;
+  color: #837e9f;
+
+} 
+.postGH-1 .Estrela{
+    margin-top: -5%;
+    margin-left: 5%;
+    }
+    .postGH-1 .Branch{
+    margin-top: -5%;
+      margin-left: 3%;
+    }
+      .postGH-1 .TituloGH1 {
+      margin-left: 5%;
+        color: #837e9f;
+      }
+    .postGH-1 .Escrita {
+        margin-left: 5%;
+      color: #837e9f;
+      display: flex;
+    }
+ .java {
+  display: flex;
+  justify-content : right;
+  margin-right: 20px;
+  margin-top: -20px;
+}
+
+.postGH-2 {
+  grid-area: postGH-2;
+  border: solid 2px var(--bg-cards);
+  width: 35vw;
+  height: 22vh;
+  border-radius: 10px;
+  background-color: #302f3d;
+  color: #837e9f;
+}
+.postGH-2 .TituloGH2 {
+    margin-left: 5%;
+}
+.postGH-2 .Escrita2 {
+    margin-left: 5%;
+}
+.postGH-2 .Estrela2 {
+   
+    margin-left: 5%;
+}
+.postGH-2 .Branch2 {
+    margin-top: -5%;
+    margin-left: 2%;
+}
+.postGH-2 .java1 {
+    display: flex;
+  justify-content : right;
+  margin-right: 20px;
+  margin-top: -25px;
+
+}
+.recentPost {
+  grid-area: recentPost;
+  border: solid 2px var(--bg-cards);
+  width: 73vw;
+  height: 10vh;
+  border-radius: 10px;
+  background-color: #302f3d;
+  color: #837e9f;
+}
+
+.post {
+  grid-area: post;
+  width: 73vw;
+  height: 29vh;
+  border: solid 2px var(--bg-cards);
+  border-radius: 10px;
+  background-color: #302f3d;
+}
+.post h2 {
+  color: #837e9f;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-right: 225px;
+  margin-top: 32px;
+}
+
+.post img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  align-items: left;
+  float: left;
+  margin-left: 1%;
+  margin-top: 2%;
+}
+
+.adb {
+  display: flex;
+  justify-content: center;
+  margin-right: 46%;
+  margin-top: 20px;
+}
+
+.anos {
+  display: flex;
+  justify-content: center;
+  margin-right: 78%;
+  margin-top: 0px;
+}
+
+.firsthash {
+  display: inline;
+  margin-left: 12.6%;
+}
+
+.hash {
+  display: inline;
+  margin-left: 3%;
+}
+
+.tecnologies {
+  grid-area: tec;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 20vh;
+  border-radius: 10px;
+  background-color: #302f3d;
+  color: #837e9f;
+  display: flex;
+  flex-direction: column;
+  box-sizing: inherit;
+  padding-bottom: 2.5%;
+
+  gap:5px;
+  margin-top: 20px;
+}
+.tecnologies .btn {
+  background-color: #cb92b1;
+  border-radius: 25px;
+  user-select: none;
+  cursor: pointer;
+}
+.box-techButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20% 5%;
+    margin:0% 5% 10% 5%;
+  }
+.tecnologies .TituloTec {
+    grid-area: exp;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 5vh;
+  border-radius: 10px;
+  background-color: #302f3d;
+  color: #837e9f;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: -50px;
+  margin-left: -3px;
+}
+
+.experiences {
+  grid-area: exp;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 45vh;
+  border-radius: 10px;
+  background-color: #302f3d;
+  color: #837e9f;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.experiences .par {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+}
+.experiences .texto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2px;
+  margin: 0px;
+}
+
+.education {
+  grid-area: edu;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 45vh;
+  border-radius: 10px;
+  background-color: #302f3d;
+  color: #837e9f;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: -15px;
+}
+
+.education .lista {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+}
+.education .detalhe {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2px;
+  margin: 0px;
+}
